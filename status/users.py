@@ -6,5 +6,6 @@ class RegisterUser(StatesGroup):
     username = State()
     bio = State()
 
+
 class Seacrh(StatesGroup):
     username = State()

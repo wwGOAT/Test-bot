@@ -1,16 +1,16 @@
 from aiogram import types
 from aiogram.dispatcher import FSMContext
 
-from keyboards.default import default
-from states.users import RegisterUser, Seacrh
+from keyboard.default import default
+from status.users import RegisterUser, Seacrh
 from loader import dp, db
-
 
 
 @dp.message_handler(commands="start")
 async def users_start(message: types.Message):
     if db.chat_id_cheakc(chat_id=message.chat.id):
-        await message.answer("Assalomu alaykum xush kelibsiz !!", reply_markup=default.about_profil)
+        await message.answer("Assalomu alaykum xush kelibsiz !!", reply_markup=default.about_profile)
+
         @dp.message_handler(text="Orqaga qaytish")
         async def back(message: types.Message):
             await users_start(message)

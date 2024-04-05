@@ -1,6 +1,6 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
-about_profil = ReplyKeyboardMarkup(keyboard=[
+about_profile = ReplyKeyboardMarkup(keyboard=[
     [KeyboardButton('About'), KeyboardButton('Followers')]
 ],
     resize_keyboard=True,

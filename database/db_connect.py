@@ -1,5 +1,7 @@
 import psycopg2 as db
 from main import config
+
+
 class Database:
     def __init__(self):
         self.conn = db.connect(
